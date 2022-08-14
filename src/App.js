@@ -1,9 +1,9 @@
+import React, { useState } from 'react';
 import './App.css';
 import data from './data';
 import List from './List';
-import { useState } from 'react';
 
-function App() {
+const App = () => {
   const [people, setPeople] = useState(data);
   return (
     <section className='card'>
@@ -14,6 +14,6 @@ function App() {
       </button>
     </section>
   );
-}
+};
 
 export default App;

@@ -2,20 +2,20 @@ import React from 'react';
 
 const List = ({ people }) => {
   return (
-    <div>
+    <>
       {people.map((person) => {
-        const { name, age, id, image } = person;
+        const { id, name, age, image } = person;
         return (
           <div key={id} className='person'>
             <img src={image} alt={name} />
             <div>
-              <h3>{name}</h3>
-              <p>{age} years</p>
+              <h4>{name}</h4>
+              <p>{age}</p>
             </div>
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 
